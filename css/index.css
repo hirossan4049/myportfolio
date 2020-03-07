@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic);
+
+@font-face {
+    font-family: 'IndieFlower';
+    src: url(/fonts/IndieFlower.ttf);
+}
+
+body {
+    background-color: #222;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: IndieFlower, sans-serif;
+    /*font-weight: 400;*/
+    /*letter-spacing: 6px;*/
+}
+
+
+.box {
+    color: #000000;
+    /*padding: 40px;*/
+}
+
+.box1 {
+    background-color: #222;
+}
+
+.box2 {
+    background: #e5cf54;
+}
+
+.box3 {
+    background: #4CA4CF;
+}
+
+.box4 {
+    background: #45CB99;
+}
+
+
+/* 点滅 */
+.blinking{
+    font-size: 700%;
+    color: #cfcfc9;
+    animation: flash 1s linear infinite;
+}
+@keyframes flash {
+    0%,50%,100%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0;
+        /*color:#7fff00;*/
+    }
+
+    65%{
+        opacity: 1;
+        /*color: #ff3760;*/
+    }
+}
+
+.section {
+    width: 100%;
+}
+
+.section.is-show .section-content {
+    opacity: 1;
+}
+
+.section-content {
+    /*max-width: 300px;*/
+    margin: 0 auto;
+    padding: 40px 60px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.75s;
+}
+
+
+.scrollme {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 90%;
+    /*--webkit-animation: poyooon 0.9s linear 0s 1;*/
+    animation: poyooon .9s linear 0s 1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+@keyframes poyooon {
+    0% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+    10% {
+        transform: scale(1.1, 1.0) translate(0%, 0%);
+    }
+    40% {
+        transform: scale(1.2, 0.8) translate(0%, 0%);
+    }
+    50% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+    60% {
+        transform: scale(0.9, 1.2) translate(0%, -50%);
+    }
+    75% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+    85% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+    100% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+}
+
+
+.text {
+    position: absolute;
+    width: 900px;
+    left: 30%;
+    margin-left: -200px;
+    height: 100px;
+    top: 40%;
+    color: white;
+}
+
+.mynames {
+    position: absolute;
+    font-family: IndieFlower, serif;
+    left: 60%;
+    top: 25%;
+}
+
+.myname {
+    color: white;
+    /*font-size: 150px;*/
+    font-size: 700%;
+}
+
+
+p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 90px;
+    vertical-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: 110px;
+    color: #fff;
+}
+
+.word {
+    position: absolute;
+    width: 700px;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.batman, .butterfly, .sofia, .apple {
+    color: cyan;
+}
+
+
+.profile {
+    font-family: IndieFlower, serif;
+}
+
+
+/*ふわっと*/
+.fuwafuwa {
+    animation-name: fadein;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+h2 {
+    color: #232323;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h3 {
+    color: #232323;
+}
+
+p {
+    color: #232323;
+}
+
+.section-red {
+    background-color: #ff6363;
+}
+
+.section-blue {
+    background-color: #8fbbff;
+}
+
+.section-green {
+    background-color: #fff;
+}
+
+
+.project-boxes {
+    display: flex;
+    align-items: stretch;
+
+    /*height: 300px;*/
+
+    /*justify-content: center;*/
+}
+
+.project-boxes div {
+    width: 30%;
+    margin: 1%;
+    /*display: flex;*/
+    /*height: 30%;*/
+    /*margin: 1%;*/
+    /*display: flex;*/
+    /*!*justify-content: center;*!*/
+    /*!*align-items: center;*!*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+}
+
+.project-box {
+    /*align-items: center;*/
+    padding: 1%;
+    margin: 15em 0;
+    width: 80%;
+    /*height: 300px;*/
+    /*height: 30%;*/
+    color: rgba(0, 0, 0, 0.95); /*文字色*/
+    background: #FFF;
+    border: solid 2px rgba(255, 255, 255, 0); /*線*/
+    border-radius: 7px; /*角の丸み*/
+
+}
+
+.project-box div a {
+    margin: 0;
+    padding: 0;
+}
+
+.project-title {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.project-short-content {
+    font-size: 10px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sns-boxes img {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    filter: grayscale(80%);
+
+}
+
+.sns-boxes img:hover {
+    filter: grayscale(0%);
+
+}
