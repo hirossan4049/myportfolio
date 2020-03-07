@@ -140,6 +140,10 @@ body {
     /*font-size: 150px;*/
     font-size: 700%;
 }
+.myname_cursor{
+    color: #8a8a80;
+    font-size: 700%;
+}
 
 
 p {
@@ -243,21 +247,24 @@ p {
     background-color: #fff;
 }
 
+.section-title{
+    display: block;
+    font-size: 35px;
+    padding-top: 10%;
+}
 
 .project-boxes {
     display: flex;
     align-items: stretch;
-
-    /*height: 300px;*/
-
-    /*justify-content: center;*/
+    justify-content: center;
+    padding-top: 5%;
 }
 
 .project-boxes div {
-    width: 30%;
+    width: 400px;
     margin: 1%;
+
     /*display: flex;*/
-    /*height: 30%;*/
     /*margin: 1%;*/
     /*display: flex;*/
     /*!*justify-content: center;*!*/
@@ -292,10 +299,37 @@ p {
 }
 
 .project-short-content {
-    font-size: 10px;
+    font-size: 23px;
     width: 100px;
     margin: 0;
     padding: 0;
+}
+
+.project-long-content{
+    font-size: 15px;
+}
+
+.project-link{
+    display: flex;
+    justify-content: center;
+    /*background-color: #ff6363;*/
+    /*padding: 0;*/
+    padding-top: 10%;
+}
+.project-link a{
+    bottom: 10px;
+    height: 5%;
+}
+.project-github{
+    font-size: 20px;
+    /*width: 250px;*/
+    text-align: center;
+    /*background-color: #ff6363;*/
+}
+.project-github img{
+    padding-top: 10px;
+    text-align: center;
+
 }
 
 
