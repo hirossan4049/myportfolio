@@ -20,19 +20,27 @@ body {
 }
 
 .box1 {
-    background-color: #222;
+    background-image: linear-gradient( 180.2deg,  rgba(24,24,24,1) 1.2%, rgba(58,58,58,1) 89.8% );
 }
 
 .box2 {
-    background: #e5cf54;
+    /*background: #e5cf54;*/
+    /*background-image: radial-gradient( circle farthest-corner at 13.7% 27.1%,  rgba(239,53,188,1.05) 13.6%, rgba(185,28,225,1.00) 90% );*/
+    /*background-image: linear-gradient( 107deg,  rgba(2,108,223,1) 27.4%, rgba(0,255,255,1) 92.7% );*/
+    background-image: radial-gradient( circle farthest-corner at 51.2% 50.7%,  rgba(238,195,17,1) 0%, rgba(240,145,43,1) 90% );
+
 }
+
+
+
 
 .box3 {
-    background: #4CA4CF;
-}
+    /*background: #4CA4CF;*/
+    background-image: radial-gradient( circle farthest-corner at 0.7% 2.3%,  rgba(41,166,255,1) 0%, rgba(153,240,255,1) 100.2% );}
 
 .box4 {
-    background: #45CB99;
+    /*background: #45CB99;*/
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(75,246,199,1) 0%, rgba(96,246,227,1) 51.5%, rgba(104,228,245,1) 94.2% );
 }
 
 
@@ -307,6 +315,7 @@ p {
 
 .project-long-content{
     font-size: 15px;
+    padding-top: 10px;
 }
 
 .project-link{
