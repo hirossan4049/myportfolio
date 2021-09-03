@@ -16,7 +16,7 @@ export default function Home() {
     // };
     // magicMouse(options);
 
-    const [inProp, setInProp] = useState(false)
+    // const [inProp, setInProp] = useState(false)
     const transitionStyles = {
         entering: {background: 'black', width: "95%", height: "140%", transition: 'all 1s ease'},
         entered: {},
@@ -50,7 +50,7 @@ export default function Home() {
             <Transition in={scrollY >= 360} timeout={1500}>
                 {(state) => (
                     <div className={styles.profileBackView} style={transitionStyles[state]}>
-                        <Image className={styles.profileImage} src={"/profile.jpeg"} width={300} height={300}/>
+                        <Image alt={""} className={styles.profileImage} src={"/profile.jpeg"} width={300} height={300}/>
                         <div className={styles.codeblockBox}>
                             <div className={styles.code}>
                                 <span className={styles.let}>let</span> <span
@@ -83,7 +83,7 @@ export default function Home() {
             {scrollY >= 400
                 ? <></>
                 : <main className={styles.hiroseImage}>
-                    <img src="/hirose2.svg" width={15000} height={scrollY * 10 + 170}/>
+                    <img alt={""} src="/hirose2.svg" width={15000} height={scrollY * 10 + 170}/>
                 </main>
             }
 
