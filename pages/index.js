@@ -18,7 +18,8 @@ export default function Home() {
 
     // const [inProp, setInProp] = useState(false)
     const transitionStyles = {
-        entering: {background: 'black', width: "95%", height: "140%", transition: 'all 1s ease'},
+        // background: 'none', 
+        entering: {width: "120%", height: "120%", transition: 'all 1s ease'},
         entered: {},
         exiting: {width: "60%", height: "80%", transition: 'all 1s ease'},
         exited: {width: "60%", height: "80%"},
@@ -46,46 +47,47 @@ export default function Home() {
                 <a className={styles.menuItem}>Contact</a>
             </div>
 
-            {scrollY >= 350 &&
-            <Transition in={scrollY >= 360} timeout={1500}>
-                {(state) => (
-                    <div className={styles.profileBackView} style={transitionStyles[state]}>
+            {/* {scrollY >= 350 &&
+            <Transition in={scrollY >= 360} timeout={1500}> */}
+                {/* {(state) => ( */}
+                    {/* <div className={styles.profileBackView} style={transitionStyles[state]}> */}
+                    <div className={styles.profileBackView} style={transitionStyles.entering}>
                         <Image alt={""} className={styles.profileImage} src={"/profile.jpeg"} width={300} height={300}/>
                         <div className={styles.codeblockBox}>
                             <div className={styles.code}>
                                 <span className={styles.let}>let</span> <span
                                 className={styles.name}>name</span> = <span
-                                className={styles.string}>&quo;Hirose Haruto&quo;</span> <br/>
+                                className={styles.string}>"Hirose Haruto"</span> <br/>
                                 <span className={styles.let}>let</span> <span
                                 className={styles.name}>nickname</span> = <span
-                                className={styles.string}>&quo;hirossan4049&quo;</span> <br/>
+                                className={styles.string}>"hirossan4049"</span> <br/>
                                 <br/>
                                 <span className={styles.let}>let</span> <span
                                 className={styles.name}>school</span> = <span
-                                className={styles.string}>&quo;N High School&quo;</span><br/>
+                                className={styles.string}>"N High School"</span><br/>
                                 <span className={styles.let}>let</span> <span
                                 className={styles.name}>skill</span> = <span className={styles.let}>nil</span><br/>
                                 <span className={styles.let}>let</span> <span className={styles.name}>loves</span> =
-                                [<span className={styles.string}>&quo;Swift&quo;</span>, <span
-                                className={styles.string}>&quo;Python&quo;</span>, <span
-                                className={styles.string}>&quo;Music&quo;</span>]<br/>
+                                [<span className={styles.string}>"Swift"</span>, <span
+                                className={styles.string}>"Python"</span>, <span
+                                className={styles.string}>"Music"</span>]<br/>
                                 <br/>
                                 <span className={styles.let}>let</span> <span className={styles.name}>mail</span> =
-                                nickname + <span className={styles.string}>&quo;@&quo;</span> + <span
-                                className={styles.string}>&quo;gmail.com&quo;</span><br/>
+                                nickname + <span className={styles.string}>"@"</span> + <span
+                                className={styles.string}>"gmail.com"</span><br/>
                             </div>
                         </div>
                     </div>
-                )}
-            </Transition>
-            }
+                {/* )} */}
+            {/* </Transition>
+            } */}
 
-            {scrollY >= 400
+            {/* {scrollY >= 400
                 ? <></>
                 : <main className={styles.hiroseImage}>
                     <img alt={""} src="/hirose2.svg" width={15000} height={scrollY * 10 + 170}/>
                 </main>
-            }
+            } */}
 
             <div className={styles.blend}/>
 

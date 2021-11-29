@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     right: 30px;
-    /*z-index: 100000;*/
+    z-index: 100000;
 }
 
 .menuItem {
@@ -23,7 +23,7 @@
     padding: 24px;
 
     /*mix-blend-mode: difference;*/
-    /*color: white;*/
+    color: white;
     /*mix-blend-mode: exclusion;*/
     /*filter: invert();*/
 }
@@ -65,14 +65,15 @@
 .profileBackView {
     overflow: hidden;
     background: black;
+    background-color: black;
     display: flex;
     position: fixed;
     /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
-    width: 95%;
+    /* width: 95%;
     height: 140%;
-    border-radius: 50%;
+    border-radius: 50%; */
     /*animation: 1s ease-out 10s 1 slideInFromLeft;*/
 }
 
@@ -106,7 +107,7 @@
 
 .code {
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 42px;
     font-family: "Menlo";
